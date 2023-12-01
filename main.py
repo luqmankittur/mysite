@@ -1,5 +1,4 @@
-from flask import *
-import os
+from flask import Flask, render_template, send_from_directory, make_response
 
 app = Flask(__name__)
 
@@ -22,7 +21,7 @@ def cookie():
 @app.route('/sitemap.xml')
 def sitemap():
     filename = 'sitemap.xml'
-    directory = os.path.join(app.root_path, 'static')  # Assuming 'static' is your static folder on PythonAnywhere
+    directory = '/home/luqmank/mysite/assets'
 
     response = make_response(send_from_directory(directory, filename))
     
