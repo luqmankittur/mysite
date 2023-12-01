@@ -1,4 +1,5 @@
 from flask import *
+import os
 
 app = Flask(__name__)
 
@@ -21,8 +22,9 @@ def cookie():
 @app.route('/sitemap.xml')
 def sitemap():
     filename = 'sitemap.xml'
+    directory = os.path.join(app.root_path, 'static')  # Assuming 'static' is your static folder on PythonAnywhere
 
-    response = make_response(send_from_directory(app.root_path, filename))
+    response = make_response(send_from_directory(directory, filename))
     
     response.headers["Content-Type"] = "application/xml"
     response.headers["Content-Disposition"] = f"attachment; filename={filename}"
