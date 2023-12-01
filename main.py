@@ -21,7 +21,7 @@ def cookie():
 @app.route('/sitemap.xml')
 def sitemap():
     filename = 'sitemap.xml'
-    directory = '/home/luqmank/mysite/assets'
+    directory = '/home/luqmank/mysite/static'
 
     response = make_response(send_from_directory(directory, filename))
     
