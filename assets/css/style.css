@@ -514,9 +514,31 @@ form .btn2 {
     width: 100%;
     text-align: center;
     padding: 25px;
-    background: #262626;
+    background-color: rgba(38, 38, 38, 0.6);
     font-weight: 100;
     margin-top: 20px;
+}
+
+.copyright pre {
+    margin-top: 5px;
+}
+
+.copyright a:link {
+    color: #b54769;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.copyright a:visited {
+    color: #e10148;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: #ff004f;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 /*----------cookie consent-------------*/
