@@ -18,10 +18,6 @@ def privacy():
 def cookie():
     return render_template("cookie.html")
 
-@app.route('/sitemap.xml')
-def static_from_root():
-    return send_from_directory(app.static, request.path[1:])
-
 if __name__ == "__main__":
     app.run()
 
