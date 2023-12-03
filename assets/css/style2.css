@@ -112,7 +112,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url("/assets/images/b1-d.png");
+    background-image: url("/static/images/b1-d.png");
     background-size: cover;
     background-position: center;
 }
@@ -561,7 +561,7 @@ nav .lol {
 @media only screen and (max-width: 600px) {
 
     #header {
-        background-image: url("/assets/images/b1-mob.png");
+        background-image: url("/static/images/b1-mob.png");
     }
 
     .header-text {

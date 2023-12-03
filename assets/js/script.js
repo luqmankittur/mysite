@@ -1,6 +1,6 @@
 /*---- Logo ----*/
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-  var image = document.getElementsByClassName("logo")[0]; image.src = "/assets/images/light1.png"
+  var image = document.getElementsByClassName("logo")[0]; image.src = "/static/images/light1.png"
 }
 /* -- Glow effect -- */
 
