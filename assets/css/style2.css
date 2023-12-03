@@ -351,12 +351,12 @@ nav ul li a:hover::after {
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
-    color: var(--darker);
+    color: #f5f5f5;
 }
 
 .layer p {
     font-size: 14px;
-    color: var(--darker);
+    color: #f5f5f5;
 }
 
 .layer a {
