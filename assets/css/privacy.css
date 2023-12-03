@@ -1,30 +1,56 @@
+:root{
+    --darker:#1c1c1c;
+    --dark:#262626;
+    --pink1:#b54769;
+    --pink2:#e10148;
+    --pink3:#ff004e;
+    --white1:#e3e3e3;
+    --white2:#f1f1f1;
+    --white3:#f5f5f5;
+    --green:#61b752;
+    --dark-a: rgba(38, 38, 38, 0.6);
+    --dark-a2:rgba(0, 0, 0, 0.6);
+
+}
+
+@media (prefers-color-scheme:light){
+    :root{
+        --darker:#f5f5f5;
+        --dark:#e3e3e3;
+        --white1:#1c1c1c;
+        --white2:#262626;
+        --white3:#313131;
+        --dark-a:rgba(227, 227, 227, 0.6)
+    }
+}
+
 ::-webkit-scrollbar {
 
     width: .8em;
 }
 
 ::-webkit-scrollbar-track {
-    background: #262626;
+    background: var(--dark);
     border-radius: 100vh;
     margin-block: 1em;
 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff004f;
+    background: var(--pink3);
     border-radius: 100vh;
 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #e10148;
+    background: var(--pink2);
     border-radius: 100vh;
 
 }
 
-@supports(scrollbar-color: #ff004f #262626) {
+@supports(scrollbar-color: var(--pink3) var(--dark)) {
     * {
-        scrollbar-color: #ff004f #262626;
+        scrollbar-color: var(--pink3) var(--dark);
     }
 }
 
@@ -40,8 +66,8 @@ html {
 }
 
 body {
-    background: #1c1c1c;
-    color: #e3e3e3;
+    background: var(--darker);
+    color: var(--white1);
     margin: 0rem;
     overflow-x: hidden;
 }
@@ -69,7 +95,7 @@ body {
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
-    background: linear-gradient(to right, #ff004f, mediumpurple);
+    background: linear-gradient(to right, var(--pink3), mediumpurple);
     animation: rotate 20s infinite;
     opacity: 0.8;
     z-index: -1;
@@ -105,7 +131,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e3e3e3;
+    color: var(--white1);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -124,7 +150,7 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
-    background: #ff004f
+    background: var(--pink3)
 }
 
 .header-text {
@@ -139,7 +165,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    color: var(--pink3);
 }
 
 .policy-text {
@@ -173,14 +199,14 @@ nav ul li a:hover::after {
 }
 
 .policy-text a {
-    color: #ff004f;
+    color: var(--pink3);
 }
 
 .copyright {
     width: 100%;
     text-align: center;
     padding: 25px;
-    background-color: rgba(38, 38, 38, 0.6);
+    background-color: var(--dark-a);
     font-weight: 100;
     margin-top: 20px;
 }
@@ -190,19 +216,19 @@ nav ul li a:hover::after {
 }
 
 .copyright a:link {
-    color: #b54769;
+    color: var(--pink1);
     background-color: transparent;
     text-decoration: none;
 }
 
 .copyright a:visited {
-    color: #e10148;
+    color: var(--pink2);
     background-color: transparent;
     text-decoration: none;
 }
 
 .copyright a:hover {
-    color: #ff004f;
+    color: var(--pink3);
     background-color: transparent;
     text-decoration: none;
 }
@@ -267,7 +293,7 @@ nav .lol {
     }
 
     nav ul li a {
-        color: #e3e3e3;
+        color: var(--white1);
         text-decoration: none;
         font-size: 18px;
         position: relative;
@@ -286,7 +312,7 @@ nav .lol {
 
     nav ul li a:hover::after {
         width: 100%;
-        background: #1c1c1c;
+        background: var(--darker);
     }
 
     nav ul .lol {
