@@ -10,6 +10,7 @@
     --green:#61b752;
     --dark-a: rgba(38, 38, 38, 0.6);
     --dark-a2:rgba(0, 0, 0, 0.6);
+    --cookie: #2f3640;
 
 }
 
@@ -20,7 +21,8 @@
         --white1:#1c1c1c;
         --white2:#262626;
         --white3:#313131;
-        --dark-a:rgba(227, 227, 227, 0.6)
+        --dark-a:rgba(227, 227, 227, 0.6);
+        --cookie: #d0c9bf;
     }
 }
 
@@ -576,7 +578,7 @@ form .btn2 {
     bottom: -100%;
     left: 0;
     right: 0;
-    background: #2f3640;
+    background: var(--cookie);
     color: var(--white3);
     padding: 0 32px;
     box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
@@ -600,7 +602,7 @@ form .btn2 {
 .cookie-btn {
     background: var(--pink3);
     border: 0;
-    color: var(--white3);
+    color: #f5f5f5;
     padding: 10px 32px;
     font-size: 18px;
     margin: 20px 0;
