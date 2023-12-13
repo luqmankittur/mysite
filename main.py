@@ -30,6 +30,18 @@ def sitemap():
 
     return response
 
+@app.route('/robots.txt')
+def robots_txt():
+    filename = 'robots.txt'
+    directory = '/home/luqmank/mysite/assets'
+
+    response = make_response(send_from_directory(directory, filename))
+    
+    response.headers["Content-Type"] = "text/plain"
+    response.headers["Content-Disposition"] = f"attachment; filename={filename}"
+
+    return response
+
 if __name__ == "__main__":
     app.run()
 
