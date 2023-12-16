@@ -617,6 +617,7 @@ ul {
     font-size: small;
     margin-top: 40px;
     color: var(--white1);
+    padding: 0px 15px;
 }
 
 .footer-col .social-links a {
@@ -642,6 +643,10 @@ ul {
 		width: 50%;
 		margin-bottom: 30px;
 	}
+
+    .copyright{
+
+    }
 }
 
 @media(max-width: 574px) {

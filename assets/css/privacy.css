@@ -277,6 +277,7 @@ ul {
     text-align: center;
     font-size: small;
     margin-top: 40px;
+    padding: 0px 15px;
     color: var(--white1);
 }
 
