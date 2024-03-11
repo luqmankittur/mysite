@@ -291,6 +291,11 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
 }
 
+.services-list p{
+    margin-top: 10px;
+    line-height: 130%;
+}
+
 .services-list div a {
     text-decoration: none;
     color: var(--white1);
