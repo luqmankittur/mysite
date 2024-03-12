@@ -211,6 +211,13 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
+.about-col-2 p{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 10px;
+}
+
+
 .sub-title {
     font-size: 40px;
     font-weight: 600;
@@ -792,6 +799,10 @@ nav .lol {
 
     .about-col-2 {
         font-size: 14px;
+    }
+
+    .about-col-2 h1{
+        text-align: center;
     }
 
     .tab-links {
