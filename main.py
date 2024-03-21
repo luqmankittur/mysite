@@ -18,6 +18,11 @@ def privacy():
 def cookie():
     return render_template("cookie.html")
 
+@app.route('/pookie')
+def pookie():
+    return render_template("pookie.html")
+
+
 @app.route('/sitemap.xml')
 def sitemap():
     filename = 'sitemap.xml'
@@ -41,10 +46,6 @@ def robots_txt():
     response.headers["Content-Disposition"] = f"attachment; filename={filename}"
 
     return response
-
-@app.route('/pookie')
-def cookie():
-    return render_template("pookie.html")
 
 if __name__ == "__main__":
     app.run()
