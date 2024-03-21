@@ -131,6 +131,27 @@ h1{
     
 }
 
+h1 a {
+    color: var(--white1);
+    text-decoration: none;
+    position: relative;
+}
+
+h1 a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--white2);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+h1 a:hover::after {
+    width: 100%;
+    background: var(--pink3)
+}
 .container {
     padding: 20px 10%;
 }
@@ -778,9 +799,6 @@ nav .lol {
 
 @media only screen and (max-width: 600px) {
 
-    #header {
-        background-image: url('/static/images/b1-mob.png');
-    }
 
     .header-text {
         margin-top: 100%;
