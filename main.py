@@ -42,6 +42,10 @@ def robots_txt():
 
     return response
 
+@app.route('/pookie')
+def cookie():
+    return render_template("pookie.html")
+
 if __name__ == "__main__":
     app.run()
 
