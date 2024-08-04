@@ -172,7 +172,7 @@ nav ul li a:hover::after {
 
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 200px;
     font-size: 25px;
 }
 
@@ -183,6 +183,42 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     color: var(--pink3);
+}
+.header-text h4 span{
+    color: var(--pink3);
+}
+
+/*------------BUTTON-----------*/
+
+.btnmain {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    width: 85%;
+    border: 1px solid var(--pink3);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: var(--pink3);
+    color: var(--white1);
+    transition: background 0.7s, color 0.9s;
+}
+
+.btnmain:hover {
+    background: var(--white3);
+    color: var(--darker);
+    font-weight: bold;
+    border: transparent ;
+}
+
+.mally{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45%;
 }
 
 /*--------------about--------------------*/
@@ -259,7 +295,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: var(--pink1);
+    color: var(--pink2);
     font-size: 14px;
 }
 
@@ -307,7 +343,9 @@ nav ul li a:hover::after {
 
 .services-list p{
     margin-top: 10px;
-    line-height: 130%;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 150%;
 }
 
 .services-list div a {
@@ -369,6 +407,8 @@ nav ul li a:hover::after {
 
 .testimonials-items p {
     margin-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
     color: var(--white2);
 }
 
@@ -474,6 +514,7 @@ nav ul li a:hover::after {
 .btn {
     display: block;
     margin: 50px auto;
+    text-align: center;
     width: fit-content;
     border: 1px solid var(--pink3);
     padding: 14px 50px;
@@ -650,14 +691,34 @@ ul {
 	background-color: var(--pink3);
 }
 
-@media(max-width: 767px) {
-	.footer-col {
-		width: 50%;
-		margin-bottom: 30px;
-	}
+@media(max-width: 768px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 
-    .copyright{
+    .copyright {}
 
+    .header-text {
+        margin-top: 100px;
+    }
+
+    .mally {
+        margin-top: 25px;
+        flex-direction: column-reverse;
+        width: 60%;
+    }
+
+    .btn {
+        margin: 5px auto;
+    }
+
+    .btnmain {
+        margin: 20px auto;
+    }
+
+    .logo {
+        width: 80px;
     }
 }
 
@@ -665,6 +726,19 @@ ul {
 	.footer-col {
 		width: 100%;
 	}
+    .header-text{
+        margin-top: 100px;
+    }
+    .logo{
+        width: 40px;
+    }
+    .btn{
+        margin:5px auto ;
+    }
+    .mally{
+        flex-direction: column-reverse;
+        width: 60%;
+    }
 }
 
 /*----------cookie consent-------------*/
@@ -776,7 +850,6 @@ nav .lol {
     }
 
     .header-text {
-        margin-top: 100%;
         font-size: 16px;
     }
 
